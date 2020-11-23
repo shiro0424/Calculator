@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>计算器</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">计算器</div>
+        <div id="screen"></div>
+        <div class="btnContainer">
+            <div class="row">
+                <button class="btn">%</button>
+                <button class="btn">CE</button>
+                <button class="btn">C</button>
+                <button class="btn">&lt;-</button>
+            </div>
+            <div class="row">
+                <button class="btn">1/x</button>
+                <button class="btn">x^2</button>
+                <button class="btn">2√x</button>
+                <button class="btn">÷</button>
+            </div>
+            <div class="row">
+                <button class="btn btn1">7</button>
+                <button class="btn btn1">8</button>
+                <button class="btn btn1">9</button>
+                <button class="btn">×</button>
+            </div>
+            <div class="row">
+                <button class="btn btn1">4</button>
+                <button class="btn btn1">5</button>
+                <button class="btn btn1">6</button>
+                <button class="btn">-</button>
+            </div>
+            <div class="row">
+                <button class="btn btn1">1</button>
+                <button class="btn btn1">2</button>
+                <button class="btn btn1">3</button>
+                <button class="btn">+</button>
+            </div>
+            <div class="row">
+                <button class="btn btn1">+/-</button>
+                <button class="btn btn1">0</button>
+                <button class="btn btn1">.</button>
+                <button class="btn btn2">=</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="js/number-model.js"></script>
+<script src="js/set-buttons.js"></script>
+<script src="js/operator-model.js"></script>
+<script src="js/screen-view.js"></script>
+<script type="text/javascript">
+    updateNum();
+</script>
