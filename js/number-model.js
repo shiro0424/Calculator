@@ -44,7 +44,11 @@ function getNumStr(){
         }
     }
     while(temp / 1000 > 1){
-        str = ("," + temp % 1000) + str;
+        let temp1 = (temp % 1000).toString();
+        while(temp1.length < 3){
+            temp1 = "0" + temp1;
+        }
+        str = "," + temp1 + str;
         temp /= 1000;
         temp = Math.floor(temp);
     }
